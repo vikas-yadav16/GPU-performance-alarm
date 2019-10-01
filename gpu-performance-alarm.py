@@ -19,6 +19,7 @@ def setAlarm(instanceID,email,topicArn):
             EvaluationPeriods=1,
             MetricName='CPUUtilization',        
             Namespace='AWS/EC2',
+            TreatMissingData='breaching',
             Period=21600,
             Statistic='Average',
             Threshold=0.0,
